@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('./general.css');
+
+@import url('./variables.css');
+
+
+.logo{
+    margin: 25px;
+    width: 200px;
+    height: 60px;
+}
+.primero{
+    text-align: center;
+}
+
+.barradeBusqueda{
+    margin: 20px;
+    padding: 1px;
+}
+
+.lista1, .listaUsuario{
+    list-style: none;
+}
+
+.lista1 a, .listaUsuario a{
+    text-decoration: none;
+    color: black;
+}
+
+/* no me deja ponerlo bien en el centro o sacar la linea blanca que produce "position" */
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--color-azul2);
+    color: #ffff;
+    border-radius: 5px;
+    width: 40px; 
+    height: 40px;
+    position: absolute; 
+    top: 70%; 
+    left: 50%;
+    margin: 0px; 
+    padding: 0px; 
+}
+
+.lastvisit, .ofertas{
+    display:list-item;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.seguridad, .envio, .pago{
+    text-align: center;
+}
+
+.fa-solid.fa-user-shield, 
+.fa-solid.fa-gift, 
+.fa-solid.fa-credit-card {
+    color: #0062A3; 
+size: 2em;
+margin-bottom: 9px;
+
+}
