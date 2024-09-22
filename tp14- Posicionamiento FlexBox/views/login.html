@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+</html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/styles/styles.css">
+</head>
+<form action="/" method="POST" class="form_login">
+    <div class="form__box">
+      <label class="form__label" for="name">Nombre de usuario</label>
+      <input class="form__control" type="text" id="name" name="name" minlength="2" required>
+      <span class="error-message" id="name-error"></span>
+    </div>
+
+      <div class="form__box">
+        <label class="form__label" for="password">Contraseña</label>
+        <input class="form__control" type="password" id="password" name="password" minlength="8" required>
+        <span class="error-message" id="name-error"></span>
+      </div>
+  <!-- hacer que nos lleve a la página principal -->
+    <div class="form__box--buttons">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>

@@ -1,0 +1,129 @@
+:root{
+    --color-amarillo:#EAC926;
+    --color-azul1: #03264C;
+    --color-azul2:#0062A3;
+}
+
+
+@media (max-width: 360px) {
+    /* no funciona, no sé por qué */
+    .listas{
+        display: none;
+    }   
+
+    .burger-menu{
+        text-align: center;
+    }
+    .contenedor1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
+    }
+    
+    .logo{
+        margin: 25px;
+        width: 50%;
+height: auto;
+        flex: 1 1 50%;
+    }
+    
+    .primero{
+        text-align: center;
+        padding: 10px;
+        width: auto;
+    }
+    
+    .barradeBusqueda{
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    .barradeBusqueda input {
+        width: 50%; 
+    }
+    
+    .article {
+        flex: 0 1 100%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+
+    .article h6 {
+        display: none;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 767px) {
+
+    .contenedor1 {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
+    }
+    
+    .logo{
+        margin: 25px;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .primero{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .barradeBusqueda{
+        margin: 20px;
+        padding: 10px;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    .article {
+flex: 0 1 48%;
+/* no me funciona flex */
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor1 {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
+    }
+    
+    .logo{
+        margin: 25px;
+        width: 200px;
+        height: 60px;
+    }
+    
+    .primero{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .barradeBusqueda{
+        margin: 20px;
+        padding: 10px;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+
+    .article {
+        flex: 0 1 23%; 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+}
